@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dino Discovery | Explore Prehistoric Life</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header>
+  <nav><div class="brand">🦕 DINO<span>DISCOVERY</span></div><div><a href="#dinosaurs">Dinosaurs</a><a href="#timeline">Time periods</a><a href="#facts">Fun facts</a></div></nav>
+  <section class="hero">
+    <div><div class="eyebrow">A journey millions of years ago</div><h1>Meet the giants of the past.</h1><p>Discover the amazing creatures that once roamed Earth. Explore famous dinosaurs, learn when they lived, and uncover what made each one unique.</p><a class="cta" href="#dinosaurs">Explore dinosaurs ↓</a></div>
+    <div class="hero-art" aria-label="Dinosaur illustration">🦖</div>
+  </section>
+</header>
+<main>
+  <section id="dinosaurs">
+    <div class="section-head"><div><div class="eyebrow" style="color:#63824e">The prehistoric collection</div><h2>Explore the dinosaurs</h2><p>Search the collection or filter by the kind of dinosaur.</p></div></div>
+    <div class="tools"><input id="search" type="search" placeholder="Search dinosaurs..." aria-label="Search dinosaurs"><select id="diet" aria-label="Filter by diet"><option value="all">All diets</option><option value="Carnivore">Carnivores</option><option value="Herbivore">Herbivores</option><option value="Omnivore">Omnivores</option></select><button id="favoritesOnly" type="button" aria-pressed="false">☆ Show favorites</button><button id="clearSaved" type="button">Clear saved data</button></div><p class="storage-note" id="storageNote" role="status">Your favorites and preferences are saved in this browser.</p>
+    <div class="grid" id="cards"></div>
+  </section>
+  <section class="era-band" id="timeline">
+    <div class="eyebrow" style="color:#63824e">A very long time ago</div><h2>When did dinosaurs live?</h2>
+    <p>Dinosaurs lived during the Mesozoic Era, which lasted from about 252 to 66 million years ago.</p>
+    <div class="eras">
+      <div class="era"><strong>Triassic</strong><p>252–201 million years ago. The earliest dinosaurs appeared, and many were relatively small.</p></div>
+      <div class="era"><strong>Jurassic</strong><p>201–145 million years ago. Dinosaurs became widespread, including enormous long-necked sauropods.</p></div>
+      <div class="era"><strong>Cretaceous</strong><p>145–66 million years ago. Famous dinosaurs such as Tyrannosaurus and Triceratops lived during this period.</p></div>
+    </div>
+  </section>
+  <section id="facts">
+    <div class="section-head"><div><div class="eyebrow" style="color:#63824e">Did you know?</div><h2>Quick dinosaur facts</h2></div></div>
+    <div class="fact"><div class="icon">🥚</div><div><strong>Birds are living dinosaurs!</strong><p>Modern birds evolved from small, feathered theropod dinosaurs. So when you see a bird, you're seeing a living branch of the dinosaur family tree.</p></div></div>
+  </section>
+
+<section class="image-credits" aria-label="Image credits">
+  <h2>Image credits</h2>
+  <p>Parasaurolophus illustration by Ddinodan (Connor Ashbridge), via Wikimedia Commons,
+  licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.
+  <a href="https://commons.wikimedia.org/wiki/File:Life_reconstruction_of_Parasaurolophus_walkeri.png" target="_blank" rel="noopener">View source</a>.</p>
+  <p>Compsognathus illustration by TotalDino, via Wikimedia Commons,
+  licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.
+  <a href="https://commons.wikimedia.org/wiki/File:Compsognathus_TD.png" target="_blank" rel="noopener">View source</a>.</p>
+</section>
+
+</main>
+<footer>Made for curious explorers · Dino Discovery</footer>
+<dialog id="details"><div class="modal"><button class="close" id="close" aria-label="Close">×</button><div class="big" id="modalEmoji"></div><div class="eyebrow" style="color:#63824e">Dinosaur profile</div><h2 id="modalName"></h2><div class="latin" id="modalLatin"></div><p id="modalText"></p><div class="tags" id="modalTags"></div></div></dialog>
+<script src="script.js" defer></script>
+</body></html>
